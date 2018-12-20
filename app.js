@@ -3,6 +3,9 @@ $(document).ready(function(){
 
   var inputs = [];
 
+
+  //strikethrough 
+
   // write to local storage from input when button save clicked
   $('.btn-submit').on('click', function(){
     var tEntry = $('.text-entry').val()
@@ -15,7 +18,7 @@ $(document).ready(function(){
     //console.log('myItemInStorage', myItemInStorage);
 
   // display the values here
-    $('.list-display-field').append("<li>" + myItemInStorage + "</li>");
+    $('ul').append("<li><span class='delete'><i class='fa fa-trash' aria-hidden='true'></i></span>" + myItemInStorage + "</li>");
     $('.text-entry').val("")
   });
 
