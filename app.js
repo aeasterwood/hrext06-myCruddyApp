@@ -7,9 +7,9 @@ $(document).ready(function(){
     var myItemInStorage = localStorage.getItem('inputFieldValue');
     console.log('myItemInStorage', myItemInStorage);
 
-    // display the value here
-    $('.list-display-field').text(myItemInStorage); // ??
 
+    // display the value here
+    $('.list-display-field').append(myItemInStorage);
   });
 
   // delete from local storage when delete button clicked
@@ -18,3 +18,15 @@ $(document).ready(function(){
   });
 
 });
+
+
+
+// $("input").keypress(function(event){
+//   if(event.which === 13) {
+//     var task = $("input").val()
+//     $("ul").append("<li><span class='delete'><i class='fa fa-trash' aria-hidden='true'></i></span>" + task +"</li>")
+//     $("input").val("")
+//   }
+// })
+
+//$('.list-display-field').append(myItemInStorage);
