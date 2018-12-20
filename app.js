@@ -9,7 +9,9 @@ $(document).ready(function(){
 
 
     // display the value here
-    $('.list-display-field').append(myItemInStorage);
+    //$('.list-display-field').text(myItemInStorage); // ?
+    $('.list-display-field').append("<div>" + myItemInStorage + "</div>");
+    $('.text-entry').val("")
   });
 
   // delete from local storage when delete button clicked
