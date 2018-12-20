@@ -4,7 +4,7 @@ $(document).ready(function(){
   var inputs = [];
 
 
-  //strikethrough 
+  
 
   // write to local storage from input when button save clicked
   $('.btn-submit').on('click', function(){
@@ -21,6 +21,11 @@ $(document).ready(function(){
     $('ul').append("<li><span class='delete'><i class='fa fa-trash' aria-hidden='true'></i></span>" + myItemInStorage + "</li>");
     $('.text-entry').val("")
   });
+
+  //strikethrough 
+  $('ul').on('click', 'li', function(){
+    $(this).toggleClass('done')
+  })
 
   // delete from local storage when delete button clicked
   $('.btn-delete').on('click', function(){
