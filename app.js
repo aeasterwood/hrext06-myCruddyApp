@@ -1,14 +1,14 @@
 $(document).ready(function(){
   console.log('jQuery loaded');
 
+  
   // write to local storage from input when button save clicked
   $('.btn-submit').on('click', function(){
     localStorage.setItem('inputFieldValue', $('.text-entry').val());
     var myItemInStorage = localStorage.getItem('inputFieldValue');
     console.log('myItemInStorage', myItemInStorage);
 
-
-    // display the value here
+    // display the values here
     //$('.list-display-field').text(myItemInStorage); // ?
     $('.list-display-field').append("<div>" + myItemInStorage + "</div>");
     $('.text-entry').val("")
@@ -22,13 +22,9 @@ $(document).ready(function(){
 });
 
 
+// Store
+// localStorage.setItem("lastname", "Smith");
 
-// $("input").keypress(function(event){
-//   if(event.which === 13) {
-//     var task = $("input").val()
-//     $("ul").append("<li><span class='delete'><i class='fa fa-trash' aria-hidden='true'></i></span>" + task +"</li>")
-//     $("input").val("")
-//   }
-// })
+// Retrieve
+// document.getElementById("result").innerHTML = localStorage.getItem("lastname");
 
-//$('.list-display-field').append(myItemInStorage);
