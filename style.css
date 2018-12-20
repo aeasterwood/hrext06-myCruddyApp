@@ -14,8 +14,12 @@ li {
 
 /*refers to index.html*/
 h1 {
-
-
+  text-align: center;
+  background: #4682B4;
+  color: white;
+  /*maybe text border*/
+  padding: 10px 20px;
+  margin: 0;
 }
 
 ul {
@@ -27,6 +31,15 @@ body {
 }
 
 .container {
+  display: block;
+  background: #F0F8FF;
+  width: 400px;
+  max-height: 550px;
+  margin: 100 px auto;
+  /*box-shadow: 0 0 3px;*/
+}
+
+.entry-w-buttons {
 
 
 }
@@ -36,7 +49,7 @@ body {
 }
 
 .text-entry {
-
+ 
 }
 
 .btn-submit {
