@@ -7,17 +7,20 @@
             src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
-    <script src="app.js"></script>
   </head>
   <body>
-  <div>
+  <script src="app.js"></script>
+  <div id="container">
+    <h1>To-Do List</h1>
+    <input class="text-entry" type="text" placeholder="Add new to-do">
+  </div>
+  <div class="buttons">
     <button class="btn-submit" type="button">save value</button>
     <button class="btn-delete" type="button">delete value</button>
-    <form>
-      <input class="text-entry" type="text" placeholder="enter your information">
-    </form>
   </div>
+   
   <div class="list-display-field">
+    <ul>  </ul>
   </div>
   </body>
 </html>

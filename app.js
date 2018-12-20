@@ -1,39 +1,21 @@
 $(document).ready(function(){
   console.log('jQuery loaded');
 
-  // function saveInputs() {
-  //   var str = JSON.stringify(inputs);
-  //   localStorage.setItem("inputs", str);
-  // }
-
-  // function getInputs() {
-  //   var str = localStorage.getItem("inputs");
-  //   inputs = JSON.parse(str);
-  //   if (!inputs) {
-  //     inputs = []
-  //   }
-  // }
-  // getInputs()
   var inputs = [];
+
   // write to local storage from input when button save clicked
   $('.btn-submit').on('click', function(){
     var tEntry = $('.text-entry').val()
     inputs.push(tEntry)
-    console.log(inputs[0])
-    console.log(localStorage.inputs)
     localStorage.setItem('inputs', tEntry);
     var myItemInStorage = localStorage.getItem('inputs');
       if (!inputs) {
        inputs = []
     }
-    console.log('myItemInStorage', myItemInStorage);
+    //console.log('myItemInStorage', myItemInStorage);
 
-
-
-
-    // display the values here
-    //$('.list-display-field').text(myItemInStorage); // ?
-    $('.list-display-field').append("<div>" + myItemInStorage + "</div>");
+  // display the values here
+    $('.list-display-field').append("<li>" + myItemInStorage + "</li>");
     $('.text-entry').val("")
   });
 
@@ -44,10 +26,4 @@ $(document).ready(function(){
 
 });
 
-
-// Store
-// localStorage.setItem("lastname", "Smith");
-
-// Retrieve
-// document.getElementById("result").innerHTML = localStorage.getItem("lastname");
 
