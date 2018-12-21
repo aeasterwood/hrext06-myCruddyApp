@@ -1,9 +1,4 @@
 /*refers to app.js*/
-.done {
-  color: green;
-  text-decoration: line-through;
-}
-
 li {
   background: white;
   height: 30px;
@@ -12,7 +7,25 @@ li {
   text-align: center;
 }
 
-.delete {
+/*every other line*/
+li:nth-child(2n) {
+  background: #F0F8FF;
+}
+
+/*delete button to appear*/
+li:hover button {
+  width: 30px;
+  opacity: 1.0;
+}
+
+.btn-delete {
+  background: #4682B4;
+  color: white;
+  height: 30px;
+  float:left;
+  display: inline-block;
+  transition: 0.5 linear;
+  opacity: 0;
 
 }
 
@@ -23,6 +36,7 @@ h1 {
   color: white;
   /*maybe text border*/
   padding: 10px 20px;
+  font-size: 28px;
   margin: 0;
 }
 
@@ -32,26 +46,13 @@ ul {
   padding: 0;
 }
 
-body {
-
-}
-
 .container {
- /* display: block;*/
   background: #F0F8FF;
   width: 400px;
   max-height: 550px;
   margin: 100 px auto;
-  /*box-shadow: 0 0 3px;*/
-}
-
-.entry-w-buttons {
-
-
-}
-
-.tv {
-
+  box-shadow: 0 0 3px;
+  font-family: 'Arial', sans-serif;
 }
 
 .text-entry {
@@ -61,24 +62,19 @@ body {
   border: 3px;
   border-left-style: solid;
   border-color: #4682B4;
-  /*box-sizing: border-box;*/
   font-size: 16px;
-  font-weight: bold;
   color: #4682B4;
 }
 
 .btn-submit {
-
+  background: #4682B4;
+  color: white;
+  text-align: center;
 }
 
-.btn-delete {
+/*.list-display-field {
 
-}
-
-
-.list-display-field {
-
-}
+}*/
 
 
 
